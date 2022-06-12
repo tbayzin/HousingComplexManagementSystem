@@ -1,9 +1,14 @@
-package com.manage.housing_complex_management_system.personnel;
+package com.manage.housing_complex_management_system.entity.resident;
 
 import jakarta.persistence.Column;
+import jakarta.persistence.Entity;
 import jakarta.persistence.Id;
+import jakarta.persistence.Table;
 
-public class Security {
+@Entity
+@Table
+public class Resident {
+
     @Id
     @Column(name = "id", nullable = false)
     private Long id;
@@ -13,6 +18,13 @@ public class Security {
     private String surname;
     private int tckn;
 
+    public Long getId() {
+        return id;
+    }
+
+    public void setId(Long id) {
+        this.id = id;
+    }
 
     public String getName() {
         return name;
@@ -36,13 +48,5 @@ public class Security {
 
     public void setTckn(int tckn) {
         this.tckn = tckn;
-    }
-
-    public Long getId() {
-        return id;
-    }
-
-    public void setId(Long id) {
-        this.id = id;
     }
 }

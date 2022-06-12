@@ -1,11 +1,13 @@
-package com.manage.housing_complex_management_system.personnel;
+package com.manage.housing_complex_management_system.entity.personnel;
 
 import jakarta.persistence.Column;
 import jakarta.persistence.Entity;
 import jakarta.persistence.Id;
+import jakarta.persistence.Table;
 
 @Entity
-public class Caretaker  {
+@Table
+public class Security {
     @Id
     @Column(name = "id", nullable = false)
     private Long id;
@@ -14,7 +16,15 @@ public class Caretaker  {
     private String name;
     private String surname;
     private int tckn;
+    private int socialSecurityNumber;
 
+    public int getSocialSecurityNumber() {
+        return socialSecurityNumber;
+    }
+
+    public void setSocialSecurityNumber(int socialSecurityNumber) {
+        this.socialSecurityNumber = socialSecurityNumber;
+    }
 
     public String getName() {
         return name;
