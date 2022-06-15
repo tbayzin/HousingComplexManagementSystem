@@ -1,9 +1,6 @@
 package com.manage.housing_complex_management_system.entity.resident;
 
-import jakarta.persistence.Column;
-import jakarta.persistence.Entity;
-import jakarta.persistence.Id;
-import jakarta.persistence.Table;
+import jakarta.persistence.*;
 
 @Entity
 @Table
@@ -11,6 +8,7 @@ public class Resident {
 
     @Id
     @Column(name = "id", nullable = false)
+    @GeneratedValue(strategy=GenerationType.IDENTITY)
     private Long id;
 
 
