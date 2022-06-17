@@ -25,11 +25,13 @@ public class ResidentService {
         return residentRepository.findAll();
     }
 
+    public Resident update(Long id, Resident resident) {
+        return residentRepository.save(resident);
+    }
+
     public void delete(Long id) {
         residentRepository.deleteById(id);
     }
 
-    public Resident update(Long id, Resident resident) {
-        return residentRepository.save(resident);
-    }
+
 }
