@@ -20,4 +20,16 @@ public class ResidentService {
     public Resident findById(Long id) {
         return residentRepository.findById(id).orElse(null);
     }
+
+    public Iterable<Resident> findAll() {
+        return residentRepository.findAll();
+    }
+
+    public void delete(Long id) {
+        residentRepository.deleteById(id);
+    }
+
+    public Resident update(Long id, Resident resident) {
+        return residentRepository.save(resident);
+    }
 }
