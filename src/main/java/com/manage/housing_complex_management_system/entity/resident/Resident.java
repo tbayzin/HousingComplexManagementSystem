@@ -1,6 +1,9 @@
 package com.manage.housing_complex_management_system.entity.resident;
 
 import jakarta.persistence.*;
+import lombok.NonNull;
+import org.springframework.lang.Nullable;
+
 
 @Entity
 @Table
@@ -14,7 +17,10 @@ public class Resident {
 
     private String name;
     private String surname;
+    @NonNull
     private int tckn;
+    @Nullable
+    private int debt;
 
     public Long getId() {
         return id;
@@ -46,5 +52,13 @@ public class Resident {
 
     public void setTckn(int tckn) {
         this.tckn = tckn;
+    }
+
+    public int getDebt() {
+        return debt;
+    }
+
+    public void setDebt(int debt) {
+        this.debt = debt;
     }
 }
