@@ -19,8 +19,21 @@ public class Resident {
     private String surname;
     @NonNull
     private int tckn;
+
     @Nullable
     private int debt;
+
+    @Nullable
+    private String note;
+
+    @Nullable
+    public String getNote() {
+        return note;
+    }
+
+    public void setNote(@Nullable String note) {
+        this.note = note;
+    }
 
     public Long getId() {
         return id;

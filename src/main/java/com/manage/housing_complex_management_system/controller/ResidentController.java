@@ -1,8 +1,6 @@
 package com.manage.housing_complex_management_system.controller;
 
 import com.manage.housing_complex_management_system.entity.resident.Resident;
-import com.manage.housing_complex_management_system.entity.residential.Apartment;
-import com.manage.housing_complex_management_system.service.ApartmentService;
 import com.manage.housing_complex_management_system.service.ResidentService;
 import lombok.AllArgsConstructor;
 import org.springframework.beans.factory.annotation.Autowired;

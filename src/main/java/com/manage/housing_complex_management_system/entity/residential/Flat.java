@@ -4,11 +4,16 @@ import jakarta.persistence.*;
 
 @Entity
 @Table
-public class Apartment {
+public class Flat {
+
+    @Id
+    @Column(name = "id", nullable = false)
+    @GeneratedValue(strategy=GenerationType.IDENTITY)
 
    // buraya resident ve blog numarası;
 
     private String apartmentNote;
+    //Residentler tcknden eklenebilir
 
 
     public String getApartmentNote() {
@@ -19,9 +24,6 @@ public class Apartment {
         this.apartmentNote = apartmentNote;
     }
 
-    @Id
-    @Column(name = "id", nullable = false)
-    @GeneratedValue(strategy=GenerationType.IDENTITY)
 
     private Long id;
 
