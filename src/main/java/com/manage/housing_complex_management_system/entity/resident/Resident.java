@@ -20,8 +20,6 @@ public class Resident {
     @NonNull
     private int tckn;
 
-    @Nullable
-    private int debt;
 
     @Nullable
     private String note;
@@ -67,11 +65,5 @@ public class Resident {
         this.tckn = tckn;
     }
 
-    public int getDebt() {
-        return debt;
-    }
 
-    public void setDebt(int debt) {
-        this.debt = debt;
-    }
 }

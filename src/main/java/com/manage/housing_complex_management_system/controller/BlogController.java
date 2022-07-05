@@ -1,9 +1,7 @@
 package com.manage.housing_complex_management_system.controller;
 
-import com.manage.housing_complex_management_system.entity.resident.Resident;
 import com.manage.housing_complex_management_system.entity.residential.Blog;
-import com.manage.housing_complex_management_system.repository.BlogRepository;
-import com.manage.housing_complex_management_system.service.BlogService;
+import com.manage.housing_complex_management_system.service.crudServices.BlogService;
 import lombok.RequiredArgsConstructor;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;

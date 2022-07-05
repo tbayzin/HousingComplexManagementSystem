@@ -1,4 +1,4 @@
-package com.manage.housing_complex_management_system.service;
+package com.manage.housing_complex_management_system.service.crudServices;
 
 import com.manage.housing_complex_management_system.entity.resident.Resident;
 import com.manage.housing_complex_management_system.repository.ResidentRepository;

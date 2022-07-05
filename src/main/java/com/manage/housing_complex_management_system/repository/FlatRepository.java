@@ -5,7 +5,7 @@ import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.stereotype.Repository;
 
 @Repository
-public interface ApartmentRepository extends JpaRepository<Flat, Long> {
+public interface FlatRepository extends JpaRepository<Flat, Long> {
 
 
 
