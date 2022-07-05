@@ -16,7 +16,6 @@ Site-apartman yönetim uygulaması
 - Borç durumu görme, borç ödeme.
 - Blog - apartman başına apartman görevlisi ve güvenlik gibi personel kaydetme.
 
-- 
 **V3**
 - Günü geçen - geçen borçlara %5 faiz ekleme.
 - Günü geçen dairelerin borçlarını hatırlatma.
