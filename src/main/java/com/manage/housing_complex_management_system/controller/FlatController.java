@@ -52,12 +52,14 @@ public class FlatController {
         flatService.delete(id);
     }
 
+    /*
     @ResponseStatus(HttpStatus.OK)
     @PostMapping("/pay/{id}")
     // AŞağıya flat değil flatın numarası verilmeli argüman olarak
     public Flat payFlat(@PathVariable Long id, @RequestBody Flat flat) {
         return debtService.calcDebtFlat(flat,300);
     }
+     */
 
 }
 

@@ -9,6 +9,8 @@ import org.springframework.stereotype.Service;
 @RequiredArgsConstructor
 public class DebtService {
 
+
+    /*
     public Flat calcDebtFlat (Flat flat,int paidAmount) {
 
         int currentDebt;
@@ -19,4 +21,5 @@ public class DebtService {
 
         return flat;
     }
+     */
 }
