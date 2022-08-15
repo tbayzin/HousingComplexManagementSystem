@@ -1,6 +1,5 @@
 package com.manage.housing_complex_management_system.entity.resident;
 
-import com.manage.housing_complex_management_system.entity.debt.Debt;
 import jakarta.persistence.*;
 import lombok.NonNull;
 import org.springframework.lang.Nullable;
