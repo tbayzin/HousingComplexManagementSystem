@@ -20,8 +20,7 @@ public class Flat {
    // buraya resident ve blog numarası;
 
     private String flatNote;
-    private
-    //Residentler tcknden eklenebilir
+
 
     @Nullable
     private int debt;
